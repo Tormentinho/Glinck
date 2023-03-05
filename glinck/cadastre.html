@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CADASTRE-SE</title>
+    <link rel="shortcut icon" type="image/x-ico" href="./img/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="">
+
+    <script type="text/javascript">
+
+        function limpar() {
+            document.cadastro.txtusuario2.style.background = "white";
+            document.cadastro.txtemail2.style.background = "white";
+            document.cadastro.txtsenha2.style.background = "white";
+            document.cadastro.txtsenha3.style.background = "white";
+
+        }
+
+        function verificar() {
+            limpar();
+            var u2, e2, s2, s3;
+
+            u2 = document.cadastro.txtusuario2.value;
+            if (u2.length == 0) {
+                alert("PREENCHA O CAMPO USUÁRIO");
+                document.cadastro.txtusuario2.style.background = "red";
+                document.cadastro.txtusuario2.focus();
+                return false;
+            }
+
+            e2 = document.cadastro.txtemail2.value;
+            if (e2.indexOf("@") < 0) {
+                alert("PREENCHA O CAMPO EMAIL CORRETAMENTE");
+                document.cadastro.txtemail2.style.background = "red";
+                document.cadastro.txtemail2.focus();
+                return false;
+            }
+
+            s2 = document.cadastro.txtsenha2.value;
+            if (s2 == "" || s2.length < 5) {
+                alert("PREENCHA O CAMPO SENHA CORRETAMENTE");
+                document.cadastro.txtsenha2.style.background = "red";
+                document.cadastro.txtsenha2.focus();
+                return false;
+            }
+
+            s3 = document.cadastro.txtsenha3.value;
+            if (s2 != s3) {
+                alert("PREENCHA O CAMPO CONFIRME SUA SENHA CORRETAMENTE");
+                document.cadastro.txtsenha3.style.background = "red";
+                document.cadastro.txtsenha3.focus();
+                return false;
+            }
+            document.cadastro.submit();
+        }
+
+
+
+
+
+    </script>
+</head>
+
+<body>
+
+    <form name="cadastro" method="post" action="cadastre.jsp">
+        <div>
+            USUARIO
+            <br>
+            <br>
+            <input type="text" name="txtusuario2" placeholder="DIGITE SEU USUÁRIO" minlength="6" maxlength="10">
+            <br>
+        </div>
+
+        <div>
+            <br>
+            E-MAIL
+            <br>
+            <br>
+            <input type="text" name="txtemail2" placeholder="DIGITE SEU EMAIL">
+            <br>
+        </div>
+
+        <div>
+            <br>
+            SENHA
+            <br>
+            <br>
+            <input type="password" name="txtsenha2" placeholder="DIGITE SUA SENHA" minlength="6" maxlength="10">
+            <br>
+        </div>
+        <div>
+            <br>
+            CONFIRME SUA SENHA
+            <br>
+            <br>
+            <input type="password" name="txtsenha3" placeholder="CONFIRME SUA SENHA" minlength="6" maxlength="10">
+            <br>
+        </div>
+        <br>
+
+        <div>
+            <p>TERMOS DE USO</p>
+        </div>
+        <br>
+
+        <div>
+            <input type="checkbox" name="txttermo">
+            <label for="txttermo">EU LI E ACEITO OS <a href="">TERMOS DE USO</a></label>
+
+
+        </div>
+
+
+        <br>
+
+        <button type="button" onclick="verificar()">ENVIAR</button>
+
+    </form>
+
+</body>
+
+</html>

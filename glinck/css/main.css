@@ -1,0 +1,75 @@
+body,html{
+    margin: 0 auto;
+    padding: 6em;
+    height: 48%;
+    margin-left: -5px;
+    margin-top: 4%;
+}
+@media screen and (min-width: 300px) {
+    /* estilos */
+}
+@media screen and (max-width: 900px) {
+   /* Estilos */
+}
+.bg{
+    background-image: url("../img/login.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+#user, #senha{
+    font-size: 20px;
+    width: 100px;
+    color: white ;
+    margin-left: 23%;
+    justify-content: center;
+}
+.esqueci{
+    text-align: center;
+    font-size: 12px;
+    width: 100px;
+    justify-content: center;
+    margin-left: 24%;
+
+}
+a:link{
+    color: #ffffff;
+    text-decoration: none;
+}
+a:hover{
+    color: rgb(52, 195, 214);
+    text-decoration: none;
+}
+.txt-esqueci {
+    color: #FF0000;
+    text-decoration: none;
+}
+a:visited {
+    color: #ffffff;
+    text-decoration: none;
+}
+a:active{
+    color: rgb(112, 169, 216);
+    text-decoration: none;
+}
+.login{
+    margin-left: 23%;
+    margin-top: 1%;
+    border: 2px solid #ffffff;
+    background-color: #EE0000;
+    color:#ffffff ;
+    font-size: 13px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+input{
+    border:1px solid #ffffff;
+}
+.cadastre{
+    margin-right: 50px;    
+    margin-top: -3px;
+    border: 2px solid #ffffff;
+    background-color: #EE0000;
+    font-size: 13px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}

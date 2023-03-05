@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANJO INVESTIDOR</title>
+
+    <script>
+
+        function limpar()
+        {
+            document.anjoinvestidor.txtnome3.style.background="whithe";
+            document.anjoinvestidor.cpfcnpj.style.background="whithe";
+            document.anjoinvestidor.telefone1.style.background="whithe";
+
+        }
+
+        function verificar()
+        {
+            limpar() ;
+            var n3 , c , t ;
+
+            n3 = document.anjoinvestidor.txtnome3.value;
+            if ( n3.length == 0)
+            {
+                alert("Preencha o campo nome");
+                document.anjoinvestidor.txtnome3.style.background="red";
+                document.anjoinvestidor.txtnome3.focus ();
+                return false ;
+                
+            }
+
+            c = document.anjoinvestidor.cpfcnpj.value;
+            if ( isNaN (c) || c.length == 0)
+            {
+                alert("Preencha o campo CPF ou CNPJ");
+                document.anjoinvestidor.cpfcnpj.style.background="red";
+                document.anjoinvestidor.cpfcnpj.focus ();
+                document.anjoinvestidor.cpfcnpj.value="";
+                return false ;
+                
+            }
+            
+            t = document.anjoinvestidor.telefone1.value;
+            if ( isNaN (t) || t.length == 0)
+            {
+                alert("Preencha o campo Telefone");
+                document.anjoinvestidor.telefone1.style.background="red";
+                document.anjoinvestidor.telefone1.focus ();
+                document.anjoinvestidor.telefone1.value="";
+                return false ;
+                
+            }
+
+            document.anjoinvestidor.submit ();
+        }    
+
+
+    </script>
+
+
+</head>
+<body>
+
+    <h2>ANJO E INVESTIDOR</h2>
+
+    <form form name="anjoinvestidor" method="post" action="anjoinvestidor.jsp">
+
+        <div>
+            NOME/RAZAO SOCIAL
+            <br>
+            <br>
+            <input type="text" name="txtnome3" >
+            <br>
+        </div>
+
+        <div>
+            <br>
+            CPF OU CNPJ
+            <br>
+            <br>
+            <input type="text" name="cpfcnpj" >
+            <br>
+
+        </div>
+
+        <div>
+            <br>
+            TELEFONE
+            <br>
+            <br>
+            <input type="text" name="telefone1" >
+        </div>
+        <br>
+        <button type="button" onclick="verificar()">PRÓXIMO</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GLINCKER</title>
+
+    <script>
+
+        function limpar() {
+            document.glincker.txtnome4.style.background = "whithe";
+            document.glincker.ra.style.background = "whithe";
+            document.glincker.telefone2.style.background = "whithe";
+
+        }
+
+        function verificar() {
+            limpar();
+            var n4, r, t2;
+
+            n4 = document.glincker.txtnome4.value;
+            if (n4.length == 0) {
+                alert("Preencha o campo nome");
+                document.glincker.txtnome4.style.background = "red";
+                document.glincker.txtnome4.focus();
+                return false;
+
+            }
+
+            r = document.glincker.ra.value;
+            if (isNaN(r) || r.length == 0) {
+                alert("Preencha o campo R.A");
+                document.glincker.ra.style.background = "red";
+                document.glincker.ra.focus();
+                document.glincker.ra.value = "";
+                return false;
+
+            }
+
+            t2 = document.glincker.telefone2.value;
+            if (isNaN(2) || t2.length == 0) {
+                alert("Preencha o campo Telefone");
+                document.glincker.telefone2.style.background = "red";
+                document.glincker.telefone2.focus();
+                document.glincker.telefone2.value = "";
+                return false;
+
+            }
+
+            document.glincker.submit();
+        }
+
+
+    </script>
+
+</head>
+
+<body>
+
+    <h2>GLINCKER</h2>
+
+    <form form name="glincker" method="post" action="glincker.jsp">
+
+        <div>
+            NOME
+            <br>
+            <br>
+            <input type="text" name="txtnome4">
+            <br>
+        </div>
+
+        <div>
+            <br>
+            R.A
+            <br>
+            <br>
+            <input type="text" name="ra">
+            <br>
+
+        </div>
+
+        <div>
+            <br>
+            TELEFONE
+            <br>
+            <br>
+            <input type="text" name="telefone2">
+        </div>
+        <br>
+        <button type="button" onclick="verificar()">PRÓXIMO</a></button>
+    </form>
+</body>
+
+</html>

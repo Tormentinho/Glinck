@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  body{
+    margin: 0 auto;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #131212;
+}
+@media screen and (min-width: 300px) {
+    /* estilos */
+}
+@media screen and (max-width: 900px) {
+   /* Estilos */
+}
+.menu-principal {
+    width: 100%;
+    background-color: #131212;
+    height: 52px;
+}
+main {
+    margin: 0 auto;
+    width: 800px;
+    position: absolute;
+}
+.logo {
+    float: left;
+    margin: 0 auto;
+    padding: 0px;
+    width: 5%;
+}
+ul {
+    list-style-type: none;
+    margin: 1px;
+    padding: 6px;
+}
+.menu-urls {
+    border-bottom: 3px solid #FF0000;
+    height: 49px;
+    margin-left: 0%;
+    margin-right: -133%;
+}
+.menu ul li {
+    display: inline-block;
+    color: #ffffff;
+    margin-left: 45px;
+    height: 31px;
+}
+.menu ul li:hover {
+    border-bottom: 3px solid #FF0000;
+}
+.menu ul li a:hover{
+    color: #FF0000;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.menu ul li a {
+    color: #828282;
+    text-decoration: none;
+    font-size: 17px;
+    text-transform: uppercase;
+}
+.menu {
+    width: 80%;
+    float: left;
+}
+  img {
+    display: block;
+    max-width: 100%;
+  }
+  
+  li {
+    list-style: none;
+  }
+  
+  body {
+    font-family: "Source Code Pro", monospace;
+    background: url("../img/fundo.jpeg") no-repeat top center;
+    background-attachment: fixed;
+    background-size: cover;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    height: 100vh;
+    color: #aeaeae;
+  }
+  
+  .title {
+    font-size: 36px;
+    font-weight: normal;
+  }
+  
+  .box {
+    background: #eee;
+    padding: 4rem;
+    box-shadow: 2px 2px 16px rgba(0, 0, 0, 0.16);
+    border-radius: 50px;
+    text-align: center;
+    margin-top: 8rem;
+  }
+  
+  .profile-pic {
+    border-radius: 50%;
+    margin: 0 auto 2rem auto;
+  }
+  
+  .profile span {
+    font-size: 24px;
+  }
+  
+  .profile p {
+    font-size: 18px;
+    margin-top: 2rem;
+    margin-bottom: 3rem;
+  }
+  
+  .botao {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    padding: 10px 8px;
+    padding-bottom: 10px;
+    color: #000;
+    background: #bebebe;
+    border: 1px solid #606060;
+    border-radius: 5px;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+  }
+
+  .botao:hover {
+    background: #66b6e4;
+    transition: background 1s;
+
+  }
+
+
+  .redes-sociais {
+    display: flex;
+    justify-content: center;
+  }
+  
+
+  .redes-sociais li {
+    margin-right: 1rem;
+  }
+
+  .bnt {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    padding: 10px 10px 10px 10px;
+    padding-bottom: 10px;
+    color: #000;
+    background: #bebebe;
+    border: 1px solid #606060;
+    border-radius: 5px;
+    text-align: center;
+    user-select: none;
+    cursor: pointer;
+    position: absolute;
+    top: center;
+    left: 50%;
+    margin-left: -80px;
+    margin-top: 5px;
+     
+    
+
+  }
+
+  .bnt:hover {
+    background: #66b6e4;
+    transition: background 1s;
+  }
+  
+  .portfolio {
+    max-width: 886px;
+    box-sizing: border-box;
+  }
+  
+  .portfolio ul {
+    margin-top: 3rem;
+  }
+  
+  .portfolio li {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    text-align: left;
+    gap: 1rem;
+    color: #606060;
+  }
+  
+  .portfolio li + li {
+    margin-top: 2rem;
+  }
+  
+  .portfolio img {
+    border-radius: 10px;
+  }
+  
+  .portfolio h2 {
+    font-weight: normal;
+    margin-bottom: 1rem;
+  }
+  
+  .copyright {
+    font-size: 14px;
+    color: white;
+    text-shadow: 2px 2px 16px black;
+    margin: 50vh 0;
+  }
